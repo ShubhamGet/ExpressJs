@@ -1,0 +1,173 @@
+html{
+    font-size: 62%;
+}
+img{
+    height: 500px;
+    width: 500px;
+    margin-top: 5rem;
+    border-radius: 30rem;
+    animation: anime_hero 10s linear infinite alternate;
+}
+@keyframes anime_hero{
+    from{
+        transform: scale(0.9);
+    }to{
+        transform: scale(1);
+
+    }
+}
+img:hover{
+    filter: drop-shadow(0 1.5rem 1rem rgba(0,0,0, 0.8));
+}
+body{
+    font-family: sans-serif;
+    font-weight: 300;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.main_header{
+    width: 100vw;
+    line-height: 10rem;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) #0a183d;
+}
+.navbar-brand{
+    color: white;
+    animation: music 1s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes music{
+    from{
+        transform: rotate(5deg);
+    }to{
+        transform: rotate(-5deg);
+
+    }
+}
+.navbar-brand:hover{
+    color: red;
+}
+.navbar-brand .fa{
+     font-size: 4rem;
+     padding-left: 8rem;
+}
+.navbar-nav{
+    padding-left: 15rem;
+}
+.nav-item{
+    margin: 1rem;
+}
+.nav-item .nav-link{
+   font-size: 1.6rem;
+   color: white;
+   text-transform: uppercase;
+   padding-right: 3rem;
+}
+.nav-item .nav-link:hover{
+    color: red;
+}
+.My_btn{
+    padding: 0.8rem 3.2rem;
+    background: red;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0,0, 0.1) ;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 4.5rem;
+    outline: none;
+}
+.My_btn.hovereffect:hover{
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(255, 255, 157, 0.4);
+    color: #0a183d;
+    transform: translateY(-7px);
+}
+/* header */
+.header{
+    width: 100%;
+    height: 80vh;
+    background: #0a183d;
+}
+.headertext{
+    width: 100%;
+    height: 80vh;
+    background: #0a183d;
+}
+.headertext.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+span{
+    color: red;
+    font-size: 6rem;
+}
+h2{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+p{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+.header_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.header_btn a{
+    padding: 0.8rem 3.2rem;
+    background: red;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0,0, 0.1) ;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 4.5rem;
+    outline: none;
+}
+.header_btn a:hover{
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(255, 255, 157, 0.4);
+    color: #0a183d;
+    transform: translateY(-7px);
+}
+
+@media(max-width:768px) {
+    .header {
+        width: 100%;
+        height: 170vh;
+        background: #0a183d;
+        }
+        .navbar-toggler{
+            background: white;
+        }
+        html{
+            font-size: 50%;
+        }
+        .main_header{
+            line-height: 2rem;
+            text-align: center;
+            padding: 2rem;
+        }
+        .header_btn{
+            flex-direction: column;
+        }
+        .header_btn a{
+            margin: 7px;
+        }
+
+}

@@ -1,0 +1,9 @@
+//Intro of ExpressJS
+----------------------
+Express.js is a Node.js framework. it is the most popular framework as of now (the most starred on NPM)
+ExpressJS is a web application framework that provides you with a simple API to build websites, web apps and back end 
+
+//Need of ExpressJS
+--------------------
+Try to write a samall REST API Server in plain Node.js (that is, using only core modules) and then in Expres.js. 
+The latter will take you 5-10x less time and lines of code
