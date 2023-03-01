@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+     style 
+        include ../static/style.css 
+
+block content
+    section#introSection
+        div.des Welcome to Shubham Dance's Academy !
+
+    section#missionSection
+        h1 Our Mission
+        div.card 
+            p Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/dance1.png")
+                div.card-content 
+                    h3 This is the best dance academy pf the universe
+            
+        div.card 
+            p Dance the way You Like
+             div.card-box 
+                div.card-img 
+                    img(src="/static/img/Break1.png")
+                div.card-content 
+                    h3 This is the best dance academy pf the universe
+        div.card 
+            p Expert Teaching
+             div.card-box 
+                div.card-img 
+                    img(src="/static/img/Break.png")
+                div.card-content 
+                    h3 This is the best dance academy pf the universe
+
+    section#sposerSection
+        h1  Our Sponser's
+        div#sponsor 
+            img(src="/static/img/apple.jpg",alt="sponser Image", class="spImage")
+            img(src="/static/img/hp.png",alt="sponser Image", class="spImage")
+            img(src="/static/img/ekart.jpeg",alt="sponser Image", class="spImage")
+            img(src="/static/img/hp.png",alt="sponser Image", class="spImage")
+    
